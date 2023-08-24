@@ -1,5 +1,6 @@
 import React from "react";
 import "../blocks/Card.css";
+import mappin from "../images/mappin.avif";
 
 export default function Card(props) {
   return (
@@ -7,6 +8,7 @@ export default function Card(props) {
       <img className="card-image" src={props.item.imageUrl} alt={props.item.imageUrl}></img>
       <div className="card-info">
         <div className="card-header">
+          <img className="card-map-pin" src={mappin} alt={mappin}></img>
           <p className="card-location">{props.item.location}</p>
           <a className="card-map-url" href={props.item.googleMapsUrl}>
             View on Google Maps
